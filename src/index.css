@@ -1,0 +1,20 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+:root{
+  --font-primary: 'Noto Sans Armenian', sans-serif;
+  --font-title: 'Satisfy', cursive;
+  --font-color: #0d2f3f;
+  --link-color: #ee633f;
+  --primary-color: #286f6c;
+  --bg-color1: #F8F7F1;
+  --bg-color2: #FFFFFF;
+  --rare-color: #eec048;
+}

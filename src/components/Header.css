@@ -1,0 +1,137 @@
+.header{
+    background-color: var(--bg-color1);
+    position: fixed;
+    width: 100%;
+    z-index: 6;
+}
+
+.menu{
+    position: absolute;
+    top: 20px;
+    left: 25px;
+}
+
+.title{
+    text-align: center;
+    font-family: var(--font-title);
+    color: var(--font-color);
+}
+
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--bg-color1);
+    width: 0%;
+    height: 100%;
+    transition: .5s;
+    overflow-x: hidden;
+    z-index: 999;
+}
+
+.nav.active{
+    width: 35%;
+}
+
+.nav-list{
+    list-style: none;
+    margin-top: 4em;
+    margin-left: 1em;
+}
+
+.list-item:first-of-type{
+    margin-top: 0;
+}
+
+.list-item{
+    margin-top: 2em;
+    font-family: var(--font-primary);
+}
+
+.link-item{
+    text-decoration: none;
+    color: var(--font-color);
+    font-size: 0.8rem;
+}
+
+.number{
+    margin-top: 4em;
+    margin-left: 1em;
+}
+
+.phone{
+    word-wrap: break-word;
+    font-family: var(--font-primary);
+    color: var(--font-color);
+}
+
+.phone_icon{
+    margin-top: 0.5em;
+}
+
+@media(min-width: 885px){
+    .menu{
+        display: none;
+    }
+
+    .flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+    .title{
+        text-align: left;
+        flex-basis: 30%;
+    }
+
+    .nav{
+        position: relative;
+        background-color: inherit;
+        flex-basis: 70%;
+        max-width: 1000px;
+    }
+
+    .nav.active{
+        width: 70%;
+    }
+
+    .nav-list{
+        margin-top: 0;
+        margin-left: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .list-item{
+        margin-top: 0;
+        padding: 0 1em;
+    }
+
+    .link-item{
+        background-image: linear-gradient(var(--primary-color),var(--font-color));
+        background-size: 0% 0.1em;
+        background-position-y: 100%;
+        background-position-x: 50%;
+        background-repeat: no-repeat;
+        transition: background-size 0.2s ease-in-out;
+    }
+
+    .link-item:hover,.link-item:focus,.link-item:active{
+        background-size: 100% 0.1em;
+    }
+
+    .number{
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .phone{
+        font-size: 0.8rem;
+    }
+
+    .phone_icon{
+        margin-top: 0;
+        margin-right: 0.5em;
+    }
+}
